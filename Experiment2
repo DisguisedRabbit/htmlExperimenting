@@ -1,0 +1,46 @@
+<head>
+	<title>Color-Changing Element</title>
+	<style>
+		#color-box {
+			background-color: blue;
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			transition: background-color 1s;
+		}
+
+		#color-box:hover {
+			background-color: red;
+		}
+	</style>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+	<div class="popup"id="color-box"></div>
+    <form>
+        <button class="experimentButton popup" type="button" onclick="window.location.href='Experiment3.html'">Go experiment 3</button>
+    </form>
+</body>
+<style>
+	.popup {
+		animation: popup 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+	}
+	
+	@keyframes popup {
+		0% {
+			opacity: 0;
+			transform: scale(0.8);
+		}
+		70% {
+			opacity: 1;
+			transform: scale(1.2);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	</style>
+	
+	<div >This element will pop up with a bouncy animation.</div>
