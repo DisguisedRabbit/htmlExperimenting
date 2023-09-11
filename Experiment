@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="styles.css">
+    <title>Simple Calculator</title>
+	
+    </head>
+
+    <body>
+        <script src="scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+        
+        <form>
+            <button class="experimentButton" type="button" onclick="window.location.href='Experiment2.html'">Go to experiment 2</button>
+
+        </form>
+        <h1><em>Simple Calculator</em></h1>
+        <form id="input">
+            <label for="num1">Number 1:</label>
+            <input onclick='green(); clearResult();' type="number" id="num1" name="num1" required>
+
+            <label for="num2">Number 2:</label>
+            <input onclick='green(); clearResult();' type="number" id="num2" name="num2" required>
+        </form>
+        <form id="math1">
+           
+            <button id="Add" type="button" onclick="green(); add(); "class="math" >+</button>
+            <button id="Subtract" type="button" onclick="green(); subtract();"class="math" >-</button>
+            <button id="Multiply" type="button" onclick="green(); multiply();"class="math" >*</button>
+            <button id="Divide" type="button" onclick="green(); divide();"class="math" >/</button>
+            <button id="Power" type="button" onclick="green(); power();"class="math" >^</button>
+            <button id="Root" type="button" onclick="green(); root();"class="math" >√</button>
+           
+        </form> 
+        <form>
+            <label for="result">Result:</label>
+            <input type="number" id="result" name="result" readonly>
+        </form>
+        <form>
+            <button id="reset" type="button" onclick="green(); clearNumbers();" >Reset</button>
+       
+        </form>
+	   
+    </body>
+    <form>
+        <div id="numberWarning" class="modal">
+            <div class="modal-content uns popup"> 
+                <span class="close" onclick="closeModal('numberWarning')">&times;</span>
+                <p>One or more of your numbers are missing!<br></br>Please input some numbers.</p>
+            </div>
+        </div>
+    </form>
+</html>
