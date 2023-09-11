@@ -1,0 +1,30 @@
+<head> <link rel="stylesheet" href="styles.css">
+</head> 
+
+<div id="logo-container">
+  <img src="logo.png" alt="My Logo">
+</div>
+<form>
+  <input type="text" placeholder="Search...">
+  <button type="submit">Go</button>
+</form>
+
+<style>
+  #logo-container {
+     display: inline-block;
+     margin-right: 10px;
+  }
+  
+  input[type="text"], button {
+     font-size: 16px;
+     padding: 8px;
+  }
+  
+  button {
+     background-color: #333;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+  }
+</style>
+
