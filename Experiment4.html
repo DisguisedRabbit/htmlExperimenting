@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body { 
+            margin: 0;
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            background: #202731;
+            overflow-x: hidden;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+        .blue {
+            background: #3c31dd;
+        }
+        .red {
+            background: #dd3f31;
+        }
+        .pink {
+            background: #ff0066;
+        }
+        .dark {
+            background: #0f0f10;
+        }
+        .curve {
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+        .curve::before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #202731;
+            transform: translate(85%, 60%);
+        }
+        .curve::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #3c31dd;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+        .bubble::after {
+            content: "";
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            background-color: #0f0f10;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="blue">
+        <h1>Nice Curves</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis illo obcaecati atque eligendi fugiat, tenetur ea? Magni optio recusandae id, quibusdam saepe, repellendus impedit sit, aspernatur explicabo temporibus quos?</p>
+        <div class="curve"></div>
+    </section>
+    <section class="bubble">
+        <h1>Nice Curves</h1>
+        <p>Iure enim non incidunt magni? Excepturi explicabo necessitatibus id quaerat tenetur, debitis nostrum laborum pariatur! Pariatur, vero qui ea culpa, necessitatibus perferendis illum illo sint tempora, nobis consequuntur praesentium officia.</p>
+    </section>
+    <section class="dark">
+        <h1>Nice Curves</h1>
+        <p>Repellendus tempore, nesciunt, delectus ducimus maiores iusto harum consequuntur molestiae culpa excepturi aspernatur, accusamus distinctio! Rem a voluptatum vel at, culpa odio earum eum quia aut incidunt vitae officia deleniti.</p>
+    </section>
+    <section class="red">
+        <h1>Nice Curves</h1>
+        <p>Quasi odio, aperiam itaque amet nesciunt quae dolores voluptas quod ea quaerat quas, magnam similique libero id exercitationem voluptatem labore quibusdam natus neque voluptatum minus sit doloremque. Error, dignissimos eos.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Nobis veniam debitis tenetur, deleniti itaque nulla dicta, similique voluptatum minima magni eius! Reiciendis, aut maiores illo perferendis omnis iste, placeat neque numquam beatae ipsa repellendus ex perspiciatis fugit similique!</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Dolores dicta recusandae iusto sint eveniet ut! Nihil consequatur, labore totam eveniet explicabo nobis consequuntur dicta fugiat error modi? Nulla libero ab ex veniam ullam, eos dolores. Magni, soluta neque!</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Dicta eos alias deleniti odio atque, fugit numquam dolor reiciendis distinctio in veniam explicabo esse quae? Quis, sequi. Blanditiis ea rerum nihil deserunt esse dicta pariatur ab modi obcaecati neque!</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Autem facilis odit nam, blanditiis, praesentium deleniti eligendi molestias animi optio non delectus totam sequi et ipsa necessitatibus. Cum eos repellat magnam accusamus officia dolores dolorum. Impedit, quam. Ea, beatae.</p>
+    </section> 
+
+
+
+
+
+
+</body>
+</html>
